@@ -5,7 +5,7 @@ services:
 before_install:
   - docker build -t mahosind95/docker-web -f Dockerfile.dev .
 
-scrpit: 
+script: 
   - docker run -e CI=true mahosind95/docker-web npm run test 
 
 deploy:
