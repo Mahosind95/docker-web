@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t Mahosind95/docker-web -f Dockerfile.dev .
+  - docker build -t mahosind95/docker-web -f Dockerfile.dev .
 
 scrpit: 
-  - docker run -e CI=true Mahosind95/docker-web npm run test 
+  - docker run -e CI=true mahosind95/docker-web npm run test 
